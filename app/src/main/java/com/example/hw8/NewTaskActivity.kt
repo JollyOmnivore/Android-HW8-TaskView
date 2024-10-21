@@ -32,7 +32,7 @@ class NewTaskActivity : AppCompatActivity() {
         prioritySelect = findViewById(R.id.prioritySpinner)
 
         addTaskButton.setOnClickListener {
-            if (taskName.text != null && taskDesc != null){
+            if (taskName.text != null && taskDesc.text != null){
                 val priority = prioritySelect.getItemAtPosition(prioritySelect.selectedItemPosition).toString().toInt()
                 Model.items.add(Item(taskName.text.toString(),taskDesc.text.toString(),priority))
                 val intent = Intent(applicationContext, MainActivity::class.java)
