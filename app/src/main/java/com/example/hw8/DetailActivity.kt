@@ -54,6 +54,7 @@ class DetailActivity : AppCompatActivity() {
         // outside resources used
         //https://stackoverflow.com/questions/46447296/android-kotlin-onitemselectedlistener-for-spinner-not-working
         //https://www.digitalocean.com/community/tutorials/android-spinner-using-kotlin
+        //===============================================================================================
         prioritySpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -71,6 +72,7 @@ class DetailActivity : AppCompatActivity() {
 
 
         }
+        //===============================================================================================
 
         backButton.setOnClickListener {
             val intent = Intent(applicationContext, MainActivity::class.java)

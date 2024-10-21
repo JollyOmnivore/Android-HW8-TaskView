@@ -43,9 +43,9 @@ class ItemAdapter(private val itemAdapterListener: ItemAdapterListener) : Recycl
                 textViewPriority.setBackgroundColor(Color.rgb(255, 165, 0))
             }
             if (item.priority == 3){
-                textViewTaskName.setBackgroundColor(Color.YELLOW)
-                textViewDescription.setBackgroundColor(Color.YELLOW)
-                textViewPriority.setBackgroundColor(Color.YELLOW)
+                textViewTaskName.setBackgroundColor(Color.rgb(198,183,0))
+                textViewDescription.setBackgroundColor(Color.rgb(198,183,0))
+                textViewPriority.setBackgroundColor(Color.rgb(198,183,0))
             }
             if (item.priority == 4){
                 textViewTaskName.setBackgroundColor(Color.GREEN)
